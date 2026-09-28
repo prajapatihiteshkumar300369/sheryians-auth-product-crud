@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #172033;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button {
+  border: 0;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #172033;
+  color: white;
+}
+
+button.secondary {
+  background: #777;
+}
+
+button.danger {
+  background: #c62828;
+}
+
+.navbar {
+  padding: 16px 5%;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1px 8px #0001;
+}
+
+.welcome {
+  margin-left: 15px;
+  color: #666;
+}
+
+.container {
+  width: min(1100px, 92%);
+  margin: 30px auto;
+}
+
+.auth-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  background: white;
+  padding: 22px;
+  border-radius: 14px;
+  box-shadow: 0 5px 25px #00000012;
+}
+
+.form {
+  width: min(500px, 92%);
+  margin: 0 auto 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form input,
+.form textarea {
+  border: 1px solid #d4d9e2;
+  border-radius: 8px;
+  padding: 11px;
+}
+
+.form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 18px;
+}
+
+.product img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.error {
+  color: #c62828;
+}
+
+.success {
+  color: #2e7d32;
+}
+
+.navbar a {
+  color: #172033;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.pagination {
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
